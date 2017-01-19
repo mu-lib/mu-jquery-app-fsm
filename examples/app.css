@@ -38,7 +38,7 @@
   input.color1 {
     background-color: #b30000;
   }
-  input.color1:hover {
+  input.color1.flashing {
     animation: blink1 1.1s step-end infinite;
   }
   input.color1:checked {
@@ -48,7 +48,7 @@
   input.color2 {
     background-color: #b2b300;
   }
-  input.color2:hover {
+  input.color2.flashing {
     animation: blink2 1s step-end infinite;
   }
   input.color2:checked {
@@ -58,7 +58,7 @@
   input.color3 {
     background-color: #00b300;
   }
-  input.color3:hover {
+  input.color3.flashing {
     animation: blink3 1s step-end infinite;
   }
   input.color3:checked {

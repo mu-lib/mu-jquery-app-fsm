@@ -10,7 +10,7 @@
         "machina": root.machina
       }));
   }
-})(["machina", "./vehicle", "./pedestrian"], this, function (machina, vehicle, pedestrian) {
+})(["machina", "./vehicle-signal", "./pedestrian-signal"], this, function (machina, vehicleSignal, pedestrianSignal) {
   return new machina.Fsm({
     namespace: "crosswalk",
     initialState: "uninitialized",
@@ -26,14 +26,14 @@
           this.emit("pedestrians", { status: "DO_NOT_WALK" });
         },
         timeout: "pedestriansEnabled",
-        _child: vehicle,
+        _child: vehicleSignal,
       },
       pedestriansEnabled: {
         _onEnter: function () {
           this.emit("vehicles", { status: "RED" });
         },
         timeout: "vehiclesEnabled",
-        _child: pedestrian
+        _child: pedestrianSignal
       }
     }
   });

@@ -8,10 +8,7 @@
       return this[m] || root[m.replace(/^\.{2}/, "mu-jquery-app-machina")];
     }));
   }
-})([
-  "../create",
-  "../widget"
-], this, function (create, widget) {
+})(["../create", "../widget"], this, function (create, widget) {
   return create(widget, {
     "on/initialize": function () {
       var me = this;
