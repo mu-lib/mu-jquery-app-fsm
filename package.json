@@ -1,0 +1,30 @@
+{
+  "name": "mu-jquery-app-machina",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mu-lib/mu-jquery-app-machina.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mu-lib/mu-jquery-app-machina/issues"
+  },
+  "homepage": "https://github.com/mu-lib/mu-jquery-app-machina#readme",
+  "devDependencies": {
+    "prefixfree": "^1.0.0"
+  },
+  "peerDependencies": {
+    "jquery": "^3.1.1"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "machina": "^2.0.0",
+    "mu-jquery-app": "^9.0.2"
+  }
+}
