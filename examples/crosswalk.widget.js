@@ -4,7 +4,7 @@
   } else if (typeof module === "object" && module.exports) {
     module.exports = factory.apply(root, modules.map(require));
   } else {
-    root["mu-jquery-app-machina/example/widget"] = factory.apply(root, modules.map(function (m) {
+    root["mu-jquery-app-machina/example/crosswalkWidget"] = factory.apply(root, modules.map(function (m) {
       return this[m] || root[m.replace(/^\.{2}/, "mu-jquery-app-machina")];
     }));
   }
@@ -19,9 +19,6 @@
     },
     "on/click": function ($event) {
       this.handle("pedestrianWaiting");
-    },
-    "fsm/vehicles": function(data) {
-      this.$element.constructor("input[name='traffic-light-color'][value='" + data.status + "']").prop("checked", true);
     },
     "fsm/*": function (eventName, data) {
       var me = this;

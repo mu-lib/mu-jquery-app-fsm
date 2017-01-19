@@ -1,7 +1,19 @@
-  #traffic-light {
+  #vehicle-light {
     position: absolute;
     display: block;
-    left: 50%;
+    left: 40%;
+    top: 50%;
+    margin-left: -60px;
+    margin-top: -160px;
+    background-color: #333;
+    width: 120px;
+    height: 320px;
+    border-radius: 30px;
+  }
+  #pedestrian-light {
+    position: absolute;
+    display: block;
+    right: 40%;
     top: 50%;
     margin-left: -60px;
     margin-top: -160px;
@@ -23,33 +35,33 @@
     border-radius: 100%;
     display: block;
   }
-  input#color1 {
+  input.color1 {
     background-color: #b30000;
   }
-  input#color1:hover {
+  input.color1:hover {
     animation: blink1 1.1s step-end infinite;
   }
-  input#color1:checked {
+  input.color1:checked {
     background-color: #FF0000;
     box-shadow: 0 0 6em #ff3333;
   }
-  input#color2 {
+  input.color2 {
     background-color: #b2b300;
   }
-  input#color2:hover {
+  input.color2:hover {
     animation: blink2 1s step-end infinite;
   }
-  input#color2:checked {
+  input.color2:checked {
     background-color: #FFFF00;
     box-shadow: 0 0 6em #ffff33;
   }
-  input#color3 {
+  input.color3 {
     background-color: #00b300;
   }
-  input#color3:hover {
+  input.color3:hover {
     animation: blink3 1s step-end infinite;
   }
-  input#color3:checked {
+  input.color3:checked {
     background-color: #00FF00;
     box-shadow: 0 0 6em #33ff33;
   }
