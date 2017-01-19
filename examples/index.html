@@ -8,18 +8,18 @@
 </head>
 
 <body>
-  <div id="vehicle-light" mu-widget="mu-jquery-app-machina/example/signalWidget">
+  <div id="vehicle-light" mu-widget="mu-jquery-app-machina/example/signal">
     <input type="radio" name="vehicle-light-color" class="color1" value="RED" disabled />
     <input type="radio" name="vehicle-light-color" class="color2" value="YELLOW" disabled />
     <input type="radio" name="vehicle-light-color" class="color3" value="GREEN" disabled />
   </div>
 
-  <div id="pedestrian-light" mu-widget="mu-jquery-app-machina/example/signalWidget">
+  <div id="pedestrian-light" mu-widget="mu-jquery-app-machina/example/signal">
     <input type="radio" name="pedestrian-light-color" class="color1" value="DO_NOT_WALK" disabled />
     <input type="radio" name="pedestrian-light-color" class="color3" value="WALK" disabled />
   </div>
 
-  <button mu-widget="mu-jquery-app-machina/example/crosswalkWidget">click</button>
+  <button mu-widget="mu-jquery-app-machina/example/button">click</button>
 
   <script src="../node_modules/jquery/dist/jquery.min.js"></script>
   <script src="../node_modules/lodash/index.js"></script>
@@ -28,11 +28,11 @@
   <script src="../fsm.js"></script>
   <script src="../create.js"></script>
   <script src="../widget.js"></script>
-  <script src="signal.vehicle.js"></script>
-  <script src="signal.pedestrian.js"></script>
+  <script src="vehicle.js"></script>
+  <script src="pedestrian.js"></script>
   <script src="crosswalk.js"></script>
-  <script src="signal.widget.js"></script>
-  <script src="crosswalk.widget.js"></script>
+  <script src="signal.js"></script>
+  <script src="button.js"></script>
   <script src="app.js"></script>
 </body>
 

@@ -4,7 +4,7 @@
   } else if (typeof module === "object" && module.exports) {
     module.exports = factory.apply(root, modules.map(require));
   } else {
-    root["mu-jquery-app-machina/example/vehicleSignal"] = factory.apply(root, modules.map(function (m) {
+    root["mu-jquery-app-machina/example/vehicle"] = factory.apply(root, modules.map(function (m) {
       return this[m] || root[m];
     }, {
         "machina": root.machina
