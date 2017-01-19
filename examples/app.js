@@ -28,6 +28,8 @@
         "fsm": crosswalk
       })
       .weave()
-      .fail(console.error.bind(console));
+      .then(function() {
+        crosswalk.transition("vehiclesEnabled");
+      }, console.error.bind(console));
   });
 });

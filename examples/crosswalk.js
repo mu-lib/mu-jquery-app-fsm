@@ -13,8 +13,13 @@
 })(["machina", "./vehicleSignal", "./pedestrianSignal"], this, function (machina, vehicleSignal, pedestrianSignal) {
   return new machina.Fsm({
     namespace: "crosswalk",
-    initialState: "vehiclesEnabled",
+    initialState: "uninitialized",
     states: {
+      uninitialized: {
+        "*": function () {
+          this.deferUntilTransition();
+        }
+      },
       vehiclesEnabled: {
         // after _onEnter execs, send "reset" input down the hierarchy
         _onEnter: function () {
