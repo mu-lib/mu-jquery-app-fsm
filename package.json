@@ -1,6 +1,6 @@
 {
   "name": "mu-jquery-app-machina",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Micro jQuery app with an FSM",
   "main": "",
   "scripts": {
