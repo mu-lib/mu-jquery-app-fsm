@@ -8,7 +8,7 @@
       return root[m];
     }));
   }
-})(["mu-jquery-app/widget"], this, function (widget) {
+})(["mu-jquery-widget/widget"], this, function (widget) {
   return widget.concat(function ($element, ns, opt) {
     var me = this
     var $ = $element.constructor;

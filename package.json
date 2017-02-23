@@ -21,16 +21,17 @@
   },
   "homepage": "https://github.com/mu-lib/mu-jquery-app-machina#readme",
   "devDependencies": {
+    "standard-version": "^2.4.0",
     "jquery": "^3.1.1",
     "machina": "^2.0.0",
     "prefixfree": "^1.0.0",
-    "standard-version": "^2.4.0"
+    "mu-jquery-app": "^11.0.0"
   },
   "peerDependencies": {
     "jquery": "^3.1.1",
     "machina": "^2.0.0"
   },
   "dependencies": {
-    "mu-jquery-app": "^9.0.2"
+    "mu-jquery-app": "^11.0.0"
   }
 }

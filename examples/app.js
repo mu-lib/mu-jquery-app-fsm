@@ -12,7 +12,7 @@
         "jquery": root.jQuery
       }));
   }
-})(["jquery", "mu-jquery-loom/jquery.loom", "mu-jquery-hub/hub", "./crosswalk"], function (jQuery, loom, hub, crosswalk) {
+})(["jquery", "mu-jquery-loom/jquery.loom", "./crosswalk"], function (jQuery, loom, crosswalk) {
   var root = this;
 
   jQuery.fn.loom = loom;
@@ -24,7 +24,6 @@
   jQuery(function ($) {
     $(document)
       .loom("[mu-widget]", "mu-widget", load, {
-        "hub": hub.call($, "memory", "stopOnFalse"),
         "fsm": crosswalk
       })
       .weave()
