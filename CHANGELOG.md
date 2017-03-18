@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/mu-lib/mu-jquery-app-machina/compare/v2.0.1...v3.0.0) (2017-03-18)
+
+
+### Bug Fixes
+
+* **packaging:** bumped deps ([6d5275d](https://github.com/mu-lib/mu-jquery-app-machina/commit/6d5275d))
+
+
+### BREAKING CHANGES
+
+* **packaging:** Overlapping rules and specs are now filtered
+
+
+
 <a name="2.0.1"></a>
 ## [2.0.1](https://github.com/mu-lib/mu-jquery-app-machina/compare/v2.0.0...v2.0.1) (2017-03-18)
 
