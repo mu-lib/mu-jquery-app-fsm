@@ -1,0 +1,22 @@
+{
+  "name": "mu-jquery-app-machina",
+  "authors": [
+    "Mikael Karon <mikael@karon.se>"
+  ],
+  "description": "Micro jQuery application fsm facet",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/mu-lib/mu-jquery-app-machina#readme",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tests",
+    "examples"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "mu-jquery-app": "^13.1.0",
+    "machina": "^2.0.0"
+  }
+}
