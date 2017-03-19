@@ -23,9 +23,6 @@
   "homepage": "https://github.com/mu-lib/mu-jquery-app-machina#readme",
   "devDependencies": {
     "standard-version": "^2.4.0",
-    "jquery": "^3.1.1",
-    "machina": "^2.0.0",
-    "prefixfree": "^1.0.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1"
   },
@@ -34,6 +31,6 @@
     "machina": "^2.0.0"
   },
   "dependencies": {
-    "mu-jquery-app": "^13.0.1"
+    "mu-jquery-app": "^13.1.0"
   }
 }
