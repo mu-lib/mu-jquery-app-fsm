@@ -10,8 +10,8 @@
       })];
     }));
   }
-})(["../create", "../widget", "./light"], this, function (create, widget, light) {
-  return create(widget, {
+})(["../widget", "./light"], this, function (widget, light) {
+  return widget.extend({
     "fsm/pedestrians": function(data) {
       if (data.status === "DO_NOT_WALK" && !!data.flashing) {
         data.status = "WALK";

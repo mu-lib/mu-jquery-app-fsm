@@ -10,8 +10,8 @@
       })];
     }));
   }
-})(["../create", "../widget", "./light"], this, function (create, widget, light) {
-  return create(widget, {
+})(["../widget", "./light"], this, function (widget, light) {
+  return widget.extend({
     "fsm/vehicles": light
   });
 });

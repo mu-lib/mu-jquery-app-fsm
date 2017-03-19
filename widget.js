@@ -8,8 +8,8 @@
       return root[m];
     }));
   }
-})(["mu-jquery-widget/widget"], this, function (widget) {
-  return widget.concat(function ($element, ns, opt) {
+})(["./create", "mu-jquery-widget/widget"], this, function (create, widget) {
+  return create(widget.concat(), function ($element, ns, opt) {
     var me = this
     var $ = $element.constructor;
     var ops = me.constructor.fsm.slice();

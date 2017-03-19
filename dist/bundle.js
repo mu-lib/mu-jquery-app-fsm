@@ -10,12 +10,12 @@
     });
   });
 
-  umd("mu-jquery-app-machina/create")(["mu-jquery-app/create", "./fsm"], function (create, fsm) {
+  umd("mu-jquery-app-machina/create")(["mu-jquery-widget/create", "./fsm"], function (create, fsm) {
     return create.extend(fsm);
   });
 
-  umd("mu-jquery-app-machina/widget")(["mu-jquery-widget/widget"], function (widget) {
-    return widget.concat(function ($element, ns, opt) {
+  umd("mu-jquery-app-machina/widget")(["./create", "mu-jquery-widget/widget"], function (create, widget) {
+    return create(widget.concat(), function ($element, ns, opt) {
       var me = this
       var $ = $element.constructor;
       var ops = me.constructor.fsm.slice();
