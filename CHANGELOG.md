@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/mu-lib/mu-jquery-app-machina/compare/v4.0.0...v4.1.0) (2017-03-19)
+
+
+### Features
+
+* bumped deps ([9572d1f](https://github.com/mu-lib/mu-jquery-app-machina/commit/9572d1f))
+
+
+
 <a name="4.0.0"></a>
 # [4.0.0](https://github.com/mu-lib/mu-jquery-app-machina/compare/v3.0.0...v4.0.0) (2017-03-19)
 
