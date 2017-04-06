@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.0.0"></a>
+# [6.0.0](https://github.com/mu-lib/mu-jquery-app-machina/compare/v5.0.0...v6.0.0) (2017-04-06)
+
+
+### Bug Fixes
+
+* remove broken CJS bundle ([ac02016](https://github.com/mu-lib/mu-jquery-app-machina/commit/ac02016))
+
+
+### Features
+
+* bumped deps ([a22e55a](https://github.com/mu-lib/mu-jquery-app-machina/commit/a22e55a))
+
+
+### BREAKING CHANGES
+
+* mu-jquery-app brings some breaking changes
+
+
+
 <a name="5.0.0"></a>
 # [5.0.0](https://github.com/mu-lib/mu-jquery-app-machina/compare/v4.1.0...v5.0.0) (2017-03-22)
 
