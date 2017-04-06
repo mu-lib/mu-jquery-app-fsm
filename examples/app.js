@@ -15,20 +15,17 @@
 })(["jquery", "mu-jquery-loom/jquery.loom", "./crosswalk"], function (jQuery, loom, crosswalk) {
   var root = this;
 
-  jQuery.fn.loom = loom;
-
   function load(module) {
     return root[module];
   }
 
+  loom.call(jQuery.fn, "[mu-widget]", "mu-widget", load, {
+    "fsm": crosswalk
+  });
+
   jQuery(function ($) {
-    $(document)
-      .loom("[mu-widget]", "mu-widget", load, {
-        "fsm": crosswalk
-      })
-      .weave()
-      .then(function() {
-        crosswalk.transition("vehiclesEnabled");
-      }, console.error.bind(console));
+    $(document).weave().then(function () {
+      crosswalk.transition("vehiclesEnabled");
+    }, console.error.bind(console));
   });
 });
