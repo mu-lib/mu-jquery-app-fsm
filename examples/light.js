@@ -9,7 +9,7 @@
     }));
   }
 })([], this, function () {
-  return function signal(data) {
+  return function (data) {
     var $element = this.$element;
     var $ = $element.constructor;
     var flashing = !!data.flashing;
