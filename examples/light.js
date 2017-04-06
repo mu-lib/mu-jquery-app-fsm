@@ -10,12 +10,12 @@
   }
 })([], this, function () {
   return function (data) {
-    var $element = this.$element;
-    var $ = $element.constructor;
+    var me = this;
+    var $ = me.$;
     var flashing = !!data.flashing;
     var status = data.status;
 
-    $element
+    me.$element
       .find("input[type='radio'][value]")
       .each(function (i, el) {
         var $el = $(el);
