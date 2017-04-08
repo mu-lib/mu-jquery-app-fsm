@@ -31,6 +31,6 @@
     "machina": "^2.0.0"
   },
   "dependencies": {
-    "mu-jquery-app": "^15.0.0"
+    "mu-jquery-app": "^15.1.2"
   }
 }

@@ -12,12 +12,15 @@
         "jquery": root.jQuery
       }));
   }
-})(["jquery", "mu-jquery-loom/jquery.loom", "./crosswalk"], function (jQuery, loom, crosswalk) {
+})(["jquery", "mu-jquery-capture/add", "mu-jquery-loom/jquery.loom", "./crosswalk"], function (jQuery, add, loom, crosswalk) {
   var root = this;
+  var $event = jQuery.event;
 
   function load(module) {
     return root[module];
   }
+
+  $event.add = add.call(jQuery, $event.add);
 
   loom.call(jQuery.fn, "[mu-widget]", "mu-widget", load, {
     "fsm": crosswalk
